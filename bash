@@ -8,9 +8,9 @@ git add .
 git commit -m "Am adăugat design-ul aplicației TaskFlow"
 
 # Verifică istoricul commit-urilor
-git log --online
+git log --oneline
 
-git remote add origin https://github.com/USERNAME/TaskFlow.git
+git remote add origin https://github.com/ConstantinLupu/TaskFlow.git
 
 git remote -v
 
