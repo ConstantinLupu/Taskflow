@@ -1,0 +1,329 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:linear-gradient(135deg,#4e54c8,#8f94fb);
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    text-align:center;
+
+    color:white;
+
+    padding:40px;
+
+}
+
+header h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+/* ==========================
+   INPUT
+========================== */
+
+.task-box{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+.task-box input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:2px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.task-box input:focus{
+
+    outline:none;
+
+    border-color:#4e54c8;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.task-box button{
+
+    background:#4e54c8;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.task-box button:hover{
+
+    background:#353bb3;
+
+    transform:translateY(-2px);
+
+}
+
+.task-box button:active{
+
+    transform:scale(.95);
+
+}
+
+/* ==========================
+   INFO
+========================== */
+
+.task-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+    padding:15px;
+
+    background:#f5f5f5;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+/* ==========================
+   TASK LIST
+========================== */
+
+#taskList{
+
+    list-style:none;
+
+}
+
+#taskList li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    background:#fafafa;
+
+    border-left:6px solid #4e54c8;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+#taskList li:hover{
+
+    transform:translateX(5px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+/* ==========================
+   COMPLETED
+========================== */
+
+.completed{
+
+    text-decoration:line-through;
+
+    opacity:.6;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.complete{
+
+    background:#2ecc71;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 12px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+.delete{
+
+    background:#e74c3c;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 12px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+.complete:hover{
+
+    background:#27ae60;
+
+}
+
+.delete:hover{
+
+    background:#c0392b;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    color:white;
+
+    padding:30px;
+
+    margin-top:auto;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:700px){
+
+.task-box{
+
+    flex-direction:column;
+
+}
+
+.task-info{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+header h1{
+
+    font-size:32px;
+
+}
+
+}

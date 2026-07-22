@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>TaskFlow</h1>
+
+    <p>Organizează-ți activitățile zilnice</p>
+
+</header>
+
+<main class="container">
+
+    <section class="task-box">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Scrie o activitate nouă">
+
+        <button id="addTask">
+
+            Adaugă
+
+        </button>
+
+    </section>
+
+    <section class="task-info">
+
+        <div>
+
+            Total:
+            <span id="totalTasks">0</span>
+
+        </div>
+
+        <div>
+
+            Finalizate:
+            <span id="completedTasks">0</span>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <ul id="taskList">
+
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+
+        TaskFlow © 2026
+
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
