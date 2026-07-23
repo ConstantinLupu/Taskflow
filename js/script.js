@@ -40,25 +40,19 @@ function addTask() {
     const text = taskInput.value.trim();
 
     if (text === "") {
-
         alert("Introdu o activitate!");
-
         taskInput.focus();
-
         return;
     }
 
     tasks.push({
-
         text: text,
         completed: false
-
     });
 
     taskInput.value = "";
 
     saveTasks();
-
     render();
 
     taskInput.focus();
@@ -88,7 +82,6 @@ function render() {
             const li = document.createElement("li");
 
             li.innerHTML = `
-
                 <span class="${task.completed ? "completed" : ""}">
                     ${task.text}
                 </span>
@@ -104,7 +97,6 @@ function render() {
                     </button>
 
                 </div>
-
             `;
 
             // Finalizare task
@@ -113,7 +105,6 @@ function render() {
                 tasks[index].completed = !tasks[index].completed;
 
                 saveTasks();
-
                 render();
 
             });
@@ -126,7 +117,6 @@ function render() {
                     tasks.splice(index, 1);
 
                     saveTasks();
-
                     render();
 
                 }
@@ -156,7 +146,7 @@ function updateStatistics() {
 }
 
 // ==============================
-// SALVARE
+// SALVARE LOCAL STORAGE
 // ==============================
 
 function saveTasks() {
@@ -166,7 +156,7 @@ function saveTasks() {
 }
 
 // ==============================
-// ÎNCĂRCARE
+// ÎNCĂRCARE LOCAL STORAGE
 // ==============================
 
 function loadTasks() {
@@ -174,9 +164,7 @@ function loadTasks() {
     const saved = localStorage.getItem("taskflow");
 
     if (saved) {
-
         tasks = JSON.parse(saved);
-
     }
 
     render();
